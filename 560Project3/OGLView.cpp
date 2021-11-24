@@ -874,11 +874,11 @@ BOOL COGLView::ComputeCCDLink(CPoint endPos) {
 					turnAngle = acos((float)cosAngle);
 					turnDeg = RADTODEG(turnAngle);
 					// damping
-					if (mDamping && turnDeg > mLink[link].dampWidth)
+					if (mDamping && turnDeg < mLink[link].dampWidth)
 						turnDeg = mLink[link].dampWidth;
 					mLink[link].rot.z += (float)turnDeg;
 					// depth of field restrictions
-					if (mDOFRestrict && mLink[link].rot.z < (float)mLink[link].minRz)
+					if (mDOFRestrict && mLink[link].rot.z > (float)mLink[link].minRz)
 						mLink[link].rot.z = (float)mLink[link].minRz;
 				}
 				// Make false to recalculate all matrices without drawing

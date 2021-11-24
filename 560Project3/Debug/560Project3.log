@@ -1,1 +1,1 @@
-﻿  560Project3.vcxproj -> C:\Users\tcs11\Documents\FA21\CS560\Thomas Learns Inverse Kinematics\560Project3\Debug\560Project3.exe
+﻿C:\VS2019\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(418,5): error MSB8041: MFC libraries are required for this project. Install them from the Visual Studio installer (Individual Components tab) for any toolsets and architectures being used.
